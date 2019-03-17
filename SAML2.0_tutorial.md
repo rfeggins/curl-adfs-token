@@ -25,3 +25,8 @@ The concepts behind a SAML flow are more easily understood than its implementati
 
 1. A user is trying to login to a service provider but the identity provider maintains knowledge of the user’s account. The user has not been authenticated yet and first needs to authenticate with an identity provider in order to gain access to the service provider.
 2. A user has already authenticated with an identity provider and when trying to access a service provider, the user is granted access to the service provider immediately without having to authenticate with the IDP again.
+
+
+
+
+https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/overview/ad-fs-scenarios-for-developers
