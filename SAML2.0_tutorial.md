@@ -23,5 +23,5 @@ A service that provides integration with an IDP. This allows users to gain acces
 #The Logic behind SAML
 The concepts behind a SAML flow are more easily understood than its implementation. There are two main user flows to grasp (both assume that the SP has existing knowledge of the IDP):
 
-A user is trying to login to a service provider but the identity provider maintains knowledge of the user’s account. The user has not been authenticated yet and first needs to authenticate with an identity provider in order to gain access to the service provider.
-A user has already authenticated with an identity provider and when trying to access a service provider, the user is granted access to the service provider immediately without having to authenticate with the IDP again.
+1. A user is trying to login to a service provider but the identity provider maintains knowledge of the user’s account. The user has not been authenticated yet and first needs to authenticate with an identity provider in order to gain access to the service provider.
+2. A user has already authenticated with an identity provider and when trying to access a service provider, the user is granted access to the service provider immediately without having to authenticate with the IDP again.
