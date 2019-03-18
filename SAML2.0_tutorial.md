@@ -7,7 +7,7 @@ Also while there are other protocols, such as OAUTH2 that could be used, coverin
 for different scenarios is out of the scope of this post. 
 
 # SAML Terms
-Before looking at the logic behind SAML solutions or the implementation, there are some basic terms to understand:
+There are a number of terms that need to be understood in order to get a firm grasp of SAML and SSO systems. The following terms are used by SAML specification and are needed to talk about deploying SSO solutions.
 
 ## Identity Provider (IDP) : 
 The server the user will ultimately authenticate with. It can be thought of as an authorization authority that holds the user’s credentials. As an example, when logging into an application with your Facebook credentials, Facebook is considered the IDP.
@@ -15,10 +15,11 @@ The server the user will ultimately authenticate with. It can be thought of as a
 ## Service Provider (SP): 
 The service or application that the user is trying to access. Slack or Github for example. This application doesn’t hold the job of authenticating the user but instead delegates it to the IDP.
 
-## Identity Management Service/Single Sign on Service: 
-A service that provides integration with an IDP. This allows users to gain access to a service via a single account.
+## Client: 
+The user that is sending a request to the SP.
 
-## Client: The user that is sending a request to the SP.
+## SSO or Single Sign on Service: 
+Ths SSO service allows the user to access a single account and is often integrated with an IDP service
 
 #The Logic behind SAML
 The concepts behind a SAML flow are more easily understood than its implementation. There are two main user flows to grasp (both assume that the SP has existing knowledge of the IDP):
